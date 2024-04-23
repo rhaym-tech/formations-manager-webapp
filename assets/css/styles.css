@@ -4,41 +4,37 @@
 }
 
 body {
-    font-family: 'SignikaNegativ', sans-serif;
+    font-family: 'SignikaNegativ', serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
+
 .container {
     display: flex;
     justify-content: space-between;
 }
-nav {
-    background-color: #ccc; /* Grey background color */
-    width: 20%;
-    padding: 20px;
-}
+
 section {
     width: 75%;
     padding: 20px;
 }
+
 article {
     background-color: #f9f9f9;
+    text-wrap:balance;
+    word-wrap: break-word;
     border: 1px solid #ccc;
     padding: 20px;
     margin-bottom: 20px;
 }
+
 aside {
     background-color: #f4f4f4;
     border: 1px solid #ccc;
     padding: 20px;
 }
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;

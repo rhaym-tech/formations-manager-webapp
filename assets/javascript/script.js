@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Script pour ajouter des commentaires dynamiquement
     const commentForm = document.getElementById('comment-form');
     const commentList = document.getElementById('comment-list');
 
@@ -8,14 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const email = document.getElementById('email').value;
         const comment = document.getElementById('comment').value;
 
-        // Vérifier si l'adresse e-mail est valide
         if (validateEmail(email)) {
-            // Créer un élément de commentaire
+
             const li = document.createElement('li');
             li.textContent = `${email}: ${comment}`;
-            // Ajouter le commentaire à la liste
+
             commentList.appendChild(li);
-            // Réinitialiser le formulaire
+
             commentForm.reset();
         } else {
             alert('Adresse e-mail non valide.');
