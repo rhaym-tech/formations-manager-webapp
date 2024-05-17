@@ -30,8 +30,10 @@ article {
 }
 
 aside {
-    background-color: #f4f4f4;
-    border: 1px solid #ccc;
+    box-shadow: 0 .1rem 1rem #0000001a;
+    height: 100%;
+    background: #ECE9E6;
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
     padding: 20px;
 }
 

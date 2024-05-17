@@ -6,7 +6,6 @@ include 'database/db_connection.php';
 $sql = "SELECT * FROM comments ORDER BY created_at DESC";
 $result = $db->query($sql);
 ?>
-<link rel="stylesheet" type="text/css" href="assets/css/comments.css" />
 <section>
     <h2>Commentaires [<?php echo $result->num_rows; ?>]</h2>
     <div class="comments">
