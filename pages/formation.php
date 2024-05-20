@@ -84,7 +84,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<?php $title = "Ecole.uwu"; include '../includes/head.php'; ?>
+<?php $title = "Training Page"; include '../includes/head.php'; ?>
 <body>
     <?# Including header ?>
     <?php include '../includes/header.php'; ?>
@@ -92,8 +92,29 @@
     <div class="container">
         <?# Including nav bar ?>
         <?php include '../includes/nav.php'; ?>
+ 
+        <div class="formations container">
+        <section style="background-color:red">
+            <h2 class="section-title">Formation pour débutant</h2>
+            
+        </section>
 
-        <div class="formation">
+        <hr> 
+
+        <section style="background-color:yellow">
+            <h2 class="section-title">Formation de moyenne durée</h2>
+           <!-- caralooooo--> 
+        </section>
+
+        <hr> 
+
+        <section class="background-color:green">
+            <h2 class="section-title">Formation de mise à niveau ou de perfectionnement</h2>
+            
+        </section>
+
+
+
             <?php
                 echo "<img src='". $formations[$id]["image"] ."'></img>";
             ?>
