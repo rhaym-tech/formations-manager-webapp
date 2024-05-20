@@ -93,31 +93,28 @@
         <?# Including nav bar ?>
         <?php include '../includes/nav.php'; ?>
  
-        <div class="formations container">
-        <section style="background-color:red">
-            <h2 class="section-title">Formation pour débutant</h2>
-            
-        </section>
-
-        <hr> 
-
-        <section style="background-color:yellow">
-            <h2 class="section-title">Formation de moyenne durée</h2>
-           <!-- caralooooo--> 
-        </section>
-
-        <hr> 
-
-        <section class="background-color:green">
-            <h2 class="section-title">Formation de mise à niveau ou de perfectionnement</h2>
-            
-        </section>
-
-
-
+        <div class="formations-container">
             <?php
                 echo "<img src='". $formations[$id]["image"] ."'></img>";
             ?>
+            <section style="background-color:red">
+                <h2 class="section-title">Formation pour débutant</h2>
+                
+            </section>
+
+            <hr> 
+
+            <section style="background-color:yellow">
+                <h2 class="section-title">Formation de moyenne durée</h2>
+            <!-- caralooooo--> 
+            </section>
+
+            <hr> 
+
+            <section class="background-color:green">
+                <h2 class="section-title">Formation de mise à niveau ou de perfectionnement</h2>
+                
+            </section>
         </div>
     </div>
 </body>

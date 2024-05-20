@@ -7,4 +7,5 @@
     <link rel="stylesheet" href="/assets/css/sidebar.css"/>
     <link rel="stylesheet" href="/assets/css/articles.css"/>
     <link rel="stylesheet" href="/assets/css/comments.css"/>
+    <link rel="stylesheet" href="/assets/css/formations.css"/>
 </head>
