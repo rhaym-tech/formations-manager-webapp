@@ -87,11 +87,11 @@
 <?php $title = "Ecole.uwu"; include '../includes/head.php'; ?>
 <body>
     <?# Including header ?>
-    <?php include '/includes/header.php'; ?>
+    <?php include '../includes/header.php'; ?>
     
     <div class="container">
         <?# Including nav bar ?>
-        <?php include '/includes/nav.php'; ?>
+        <?php include '../includes/nav.php'; ?>
 
         <div class="formation">
             <?php
