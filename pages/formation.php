@@ -80,6 +80,8 @@
     } else {
         $id = 'undefined';
     }
+
+    $formation = $formations[$id];
 ?>
 
 <!DOCTYPE html>
@@ -89,32 +91,28 @@
     <?# Including header ?>
     <?php include '../includes/header.php'; ?>
     
-    <div class="container">
+    <div class="container formation-page-container">
         <?# Including nav bar ?>
         <?php include '../includes/nav.php'; ?>
- 
+
         <div class="formations-container">
             <?php
-                echo "<img src='". $formations[$id]["image"] ."'></img>";
+                echo "<img src='" . $formation["image"] . "'/>"
             ?>
-            <section style="background-color:red">
-                <h2 class="section-title">Formation pour débutant</h2>
-                
-            </section>
+            <h1><?php echo $formation["titre"] ?></h1>
+            <p><?php echo $formation["description"] ?></p>
+            <br/>
+            <?php
+                foreach($formation["sections"] as $section) {
+                    echo '<div class="formation-section">';
+                        echo '<h2 class="section-title">'. $section["titre"] .'</h2>';
+                        echo '<div class="program"><p>'. $section["programme"] .'</p></div>';
+                        echo '<div class="tarif">' . $section["tarifs"] . '</div>';
+                    echo '</div>';
 
-            <hr> 
-
-            <section style="background-color:yellow">
-                <h2 class="section-title">Formation de moyenne durée</h2>
-            <!-- caralooooo--> 
-            </section>
-
-            <hr> 
-
-            <section class="background-color:green">
-                <h2 class="section-title">Formation de mise à niveau ou de perfectionnement</h2>
-                
-            </section>
+                    echo '<hr/>';
+                }
+            ?>
         </div>
     </div>
 </body>
