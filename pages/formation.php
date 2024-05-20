@@ -74,7 +74,7 @@
     );
 ?>
 
-<img?php
+<?php
     if(isset($_GET['id'])) {
         $id = $_GET['id'];
     } else {
@@ -94,6 +94,9 @@
         <?php include '/includes/nav.php'; ?>
 
         <div class="formation">
+            <?php
+                echo "<img src='". $formations[$id]["image"] ."'></img>";
+            ?>
         </div>
     </div>
 </body>
