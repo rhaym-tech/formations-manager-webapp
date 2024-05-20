@@ -1,7 +1,7 @@
 <?php 
     $formations = Array(
         "bereautique" => Array(
-            "image" => "",
+            "image" => "/assets/images/bereautique.png",
             "titre" => "Formation Béreautique",
             "caption" => "",
             "description" => "La formation bureautique est conçue pour ceux qui souhaitent acquérir des compétences essentielles en informatique de bureau, notamment dans l'utilisation de logiciels de traitement de texte, de tableurs et de présentations.",
@@ -25,7 +25,7 @@
         ), 
 
         "cybersecurity" => Array(
-            "image" => "",
+            "image" => "/assets/images/cyber-security.jpeg",
             "titre" => "Formation CyberSecurity",
             "caption" => "",
             "description" => "La formation en cybersécurité vise à sensibiliser les participants aux menaces informatiques modernes et à leur apprendre à protéger efficacement les données et les réseaux contre les cyberattaques.",
@@ -49,7 +49,7 @@
         ), 
 
         "phonerepair" => Array(
-            "image" => "",
+            "image" => "/assets/images/repair.jpg",
             "titre" => "Formation Réparation Des Téléphones",
             "caption" => "",
             "description" => "La formation en réparation de téléphones forme les participants à diagnostiquer et à réparer efficacement les problèmes matériels et logiciels courants rencontrés dans les smartphones.",
@@ -74,7 +74,7 @@
     );
 ?>
 
-<?php
+<img?php
     if(isset($_GET['id'])) {
         $id = $_GET['id'];
     } else {
@@ -94,7 +94,6 @@
         <?php include '/includes/nav.php'; ?>
 
         <div class="formation">
-            
         </div>
     </div>
 </body>
