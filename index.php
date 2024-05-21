@@ -21,11 +21,11 @@
         <aside>
             <h1>Promotions</h1>
             <marquee direction="up" scrollamount="2">
-                <p>Promotion 1: Réduction des tarifs pour CyberSecurity formation</p>
+                <p>30% réduction des tarifs pour CyberSecurity formation</p>
                 <br/>
-                <p>Promotion 2: Offre spéciale pour Bereautique formation</p>
+                <p>Offre spéciale pour Bereautique formation</p>
                 <br/>
-                <p>Promotion 3: Réductions selon le nombre d'apprentis...</p>
+                <p>Réductions selon le nombre d'apprentis...</p>
             </marquee>
         </aside>
     </div>

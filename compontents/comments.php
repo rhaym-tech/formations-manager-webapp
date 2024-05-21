@@ -6,9 +6,10 @@ include 'database/db_connection.php';
 $sql = "SELECT * FROM comments ORDER BY created_at DESC";
 $result = $db->query($sql);
 ?>
+
 <section>
     <h2>Commentaires [<?php echo $result->num_rows; ?>]</h2>
-    <div class="comments">
+    <div id="comments" class="comments">
         <?php
         // Check if there are any comments
         if ($result->num_rows > 0) {

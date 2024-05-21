@@ -4,7 +4,7 @@ include '../database/db_connection.php';
 
 // Function to safely redirect
 function redirect($url) {
-    header("Location: $url");
+    header("Location: $url#comments");
     exit();
 }
 
