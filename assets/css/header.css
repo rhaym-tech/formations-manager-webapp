@@ -1,6 +1,26 @@
 header {
-    background-color: #333;
+    background-color: #C3ACD0;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
+    z-index: 999;
     text-align: center;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo {
+    display: unset!important;
+    width: 40px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.header-title {
+    color: black;
 }

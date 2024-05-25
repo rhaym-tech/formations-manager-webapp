@@ -1,33 +1,32 @@
+<!-- La page d'accueil de l'école -->
+
 <!DOCTYPE html>
 <html lang="en">
+<!-- Inclusion du head avec un titre -->
 <?php $title = "Ecole.uwu"; include 'includes/head.php'; ?>
+
 <body>
-    <?# Including header ?>
+    <!-- Inclusion du header -->
     <?php include 'includes/header.php'; ?>
     
-    <div class="container">
-        <?# Including nav bar ?>
+    <!-- La contunaire de la page -->
+    <main class="container">
+       <!-- Inclusion du navbar -->
         <?php include 'includes/nav.php'; ?>
 
-        <div class="sections-container">
-            <? //* Including articles section ?>
-            <?php include 'compontents/articlesCards.php'?>
+        <div class="container">
+            <!-- La contunaire des sections -->
+            <div class="sections-container">
+                <!-- Inclusion des articles -->
+                <?php include 'compontents/articlesCards.php'?>
 
-            <? //* Including comments section ?>
-            <?php include 'compontents/comments.php'; ?>
-            
+                <!-- Inclusion du section de commentaires -->
+                <?php include 'compontents/comments.php'; ?>
+            </div>
+
+            <!-- Inclusion du aside de promotions -->
+            <?php include 'includes/aside.php'; ?>
         </div>
-        
-        <aside>
-            <h1>Promotions</h1>
-            <marquee direction="up" scrollamount="2">
-                <p>30% réduction des tarifs pour CyberSecurity formation</p>
-                <br/>
-                <p>Offre spéciale pour Bereautique formation</p>
-                <br/>
-                <p>Réductions selon le nombre d'apprentis...</p>
-            </marquee>
-        </aside>
-    </div>
+    </main>
 </body>
 </html>

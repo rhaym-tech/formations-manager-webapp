@@ -1,13 +1,36 @@
+/* Déclaration du Miniprojet font avec @font-face */
 @font-face {
-    font-family: 'SignikaNegativ';
+    font-family: 'Miniprojet font';
     src: url('/assets/fonts/SignikaNegativ.ttf') format('truetype');
 }
 
+/* Déclaration des styles globales */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Body style */
 body {
-    font-family: 'SignikaNegativ', serif;
+    font-family: 'Miniprojet font', sans-serif;
+    background-color: #FFFBF5;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* la container principale de la page */
+main {
+    margin-left: 30%;
+}
+
+/* Donner un style à les titres */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Miniprojet font', serif;
+    color: #7743DB;
 }
 
 .container {
@@ -15,25 +38,18 @@ body {
     justify-content: space-between;
 }
 
-section {
-    width: 75%;
-    padding: 20px;
+.sections-container {
+    width: 80%;
 }
 
-article {
-    background-color: #f9f9f9;
-    text-wrap:balance;
-    word-wrap: break-word;
-    border: 1px solid #ccc;
+section {
     padding: 20px;
-    margin-bottom: 20px;
 }
 
 aside {
     box-shadow: 0 .1rem 1rem #0000001a;
     height: 100%;
-    background: #ECE9E6;
-    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+    background: #F7EFE5;
     padding: 20px;
 }
 

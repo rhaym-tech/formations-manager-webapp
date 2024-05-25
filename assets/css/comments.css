@@ -5,7 +5,7 @@
   display: block;
   gap: 1rem;
   margin-bottom: 10px;
-  background-color: #f0f2f5;
+  background-color: #F7EFE5;
   padding: 10px;
   border-radius: 15px;
 }
@@ -20,7 +20,7 @@
   flex: 0 0 var(--size);
   width: var(--size);
   height: var(--size);
-  background-color: lightgrey;
+  background-color: #C3ACD0;
   border-radius: 50%;
 }
 
@@ -41,15 +41,15 @@
 .new-comment input[type="email"] {
   padding: 10px!important;
 }
-.new-comment input[type="email"],
-.new-comment textarea {
-  background-color: #f0f2f5;
+
+.new-comment input[type="email"], .new-comment textarea {
+  background-color: #F7EFE5;
   border-style: none;
   border-radius: 15px;
   padding: 8px;
   margin-bottom: 10px;
 
-  font: 1em 'SignikaNegativ';
+  font: 1em 'Miniprojet font', sans-serif;
 }
 
 .new-comment textarea {
@@ -58,7 +58,7 @@
 
 .new-comment button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #b7d;
   color: white;
   border: none;
   border-radius: 5px;
@@ -66,5 +66,5 @@
 }
 
 .new-comment button:hover {
-  background-color: #0056b3;
+  background-color: #7743DB;
 }

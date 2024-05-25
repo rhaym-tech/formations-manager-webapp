@@ -1,8 +1,8 @@
 <?php
-// Include database connection file
+// Inclure le fichier de connexion à la base de données
 include 'database/db_connection.php';
 
-// Retrieve comments from database
+// Récupérer les commentaires de la base de données
 $sql = "SELECT * FROM comments ORDER BY created_at DESC";
 $result = $db->query($sql);
 ?>
@@ -11,16 +11,16 @@ $result = $db->query($sql);
     <h2>Commentaires [<?php echo $result->num_rows; ?>]</h2>
     <div id="comments" class="comments">
         <?php
-        // Check if there are any comments
+        // Vérifier s'il y a des commentaires
         if ($result->num_rows > 0) {
-            // Output data of each row
+            // Afficher les données de chaque ligne
             while ($row = $result->fetch_assoc()) {
                 echo '<div class="comment">';
                 echo '<div class="comment-header">';
                 echo '<div class="user-pfp"></div>';    
                 echo '<div>';
-                echo '<div class ="user-email"><strong>' . $row['email'] . '</strong></div>';
-                echo '<div class ="comment-timestamp">' . $row['created_at'] . '</div>';
+                echo '<div class="user-email"><strong>' . $row['email'] . '</strong></div>';
+                echo '<div class="comment-timestamp">' . $row['created_at'] . '</div>';
                 echo '</div>';
                 echo '</div>';
                 echo '<div class="comment-body">';
@@ -29,23 +29,22 @@ $result = $db->query($sql);
                 echo '</div>';
             }
         } else {
-            echo "No comments yet.";
+            echo "Pas encore de commentaires.";
         }
 
-        // Close result set
+        // Fermer le jeu de résultats
         $result->close();
 
-        // Close database connection
+        // Fermer la connexion à la base de données
         $db->close();
         ?>
     </div>
     <div class="new-comment">
         <h3>Envoyer un commentaire</h3>
-        <form action="api/submit_comment.php" method="POST">
+        <form id="comment-form" action="api/submit_comment.php" method="POST">
             <input type="email" name="email" id="email" placeholder="Votre adresse email" required>
             <textarea name="comment" id="comment" placeholder="Votre commentaire" required></textarea>
             <button type="submit">Envoyer</button>
         </form>
-    
     </div>
 </section>

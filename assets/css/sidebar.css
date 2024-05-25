@@ -1,13 +1,52 @@
-.nav {
-    box-shadow: 0 .1rem 1rem #0000001a;
-    background: #ECE9E6;
-    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+.sidebar {
+    background-color: #C3ACD0;
+    color: black;
+    padding: 100px 20px 20px 20px;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
     width: 30%;
-    padding: 20px;
 }
 
-@media (max-width: 768px) {
-    .nav {
+.sidebar h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.dev-card {
+    background-color: #b7d;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.developer-cards .dev-card {
+    display: none;
+}
+
+.links a {
+    display: block;
+    color: black;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.links a:hover {
+    background-color: #b7d;
+}
+
+@media (max-width: 600px) {
+    .sidebar-container {
         width: 100%;
+    }
+    
+    .sidebar {
+        padding: 20px;
+        height: auto;
+        position: relative;
     }
 }
