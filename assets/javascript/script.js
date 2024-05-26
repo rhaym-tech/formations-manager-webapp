@@ -21,7 +21,7 @@ function modifierCommentairesDates() {
         const date = new Date(dateString);
 
         // Définit les options de formatage de la date.
-        let options = { weekday: 'long', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' };
+        let options = { weekday: 'long', year: 'numeric', month: 'long', day: '2-digit', hour: '2-digit', minute: '2-digit' };
     
         // Formate la date en utilisant les options définis.
         let dateFormatee = date.toLocaleDateString('fr-FR', options);
