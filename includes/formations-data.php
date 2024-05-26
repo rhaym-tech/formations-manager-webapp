@@ -52,7 +52,7 @@ $formations = Array(
             Array(
                 "titre" => "Gestion des incidents de sécurité et analyse forensique",
                 "programme" => "Cette section se concentre sur des aspects avancés de la cybersécurité, tels que l'analyse forensique, la gestion des incidents de sécurité et la protection des données sensibles. Elle prépare les participants à faire face à des menaces complexes et en constante évolution.",
-                "tarifs" => "400€ pour 15 sessions de formation",
+                "tarifs" => "50000DA pour 15 sessions de formation",
             )
         )
     ), 
@@ -67,7 +67,7 @@ $formations = Array(
             Array(
                 "titre" => "Introduction aux principes de base de la réparation des téléphones",
                 "programme" => "Cette section fournit une introduction pratique à la réparation des téléphones, en enseignant aux participants les compétences de base telles que le remplacement de l'écran, la réparation des boutons et la résolution des problèmes de batterie.",
-                "tarifs" => "120€ pour 6 sessions de formation",
+                "tarifs" => "12000DA pour 6 sessions de formation",
             ),
             Array(
                 "titre" => "Réparation avancée des smartphones et remplacement des composants",

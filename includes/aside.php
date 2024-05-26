@@ -1,10 +1,14 @@
 <aside>
     <h1>Promotions</h1>
     <marquee direction="up" scrollamount="2">
-        <p>30% réduction des tarifs pour CyberSecurity formation</p>
+        <p>Inscrivez-vous maintenant et bénéficiez de 20% de réduction sur notre formation en cyber sécurité !</p>
         <br/>
-        <p>Offre spéciale pour Bereautique formation</p>
+        <p>Devenez expert en cyber sécurité avec 25% de réduction sur notre formation !</p>
         <br/>
-        <p>Réductions selon le nombre d'apprentis...</p>
+        <p>Offre limitée : 20% de réduction sur la formation en cyber sécurité pour les premières inscriptions !</p>
+        <br/>
+        <p>Apprenez à réparer les téléphones avec 15% de réduction sur notre formation complète !</p>
+        <br/>
+        <p>Offre exclusive : 20% de réduction pour les premiers inscrits à la formation en réparation de téléphones !</p>
     </marquee>
 </aside>

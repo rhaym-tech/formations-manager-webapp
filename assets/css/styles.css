@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sections-container {
-    width: 80%;
+    width: 150%;
 }
 
 section {
@@ -47,7 +47,7 @@ section {
 }
 
 aside {
-    box-shadow: 0 .1rem 1rem #0000001a;
+    box-shadow: 0 .3rem 1rem #0000001d;
     height: 100%;
     background: #F7EFE5;
     padding: 20px;

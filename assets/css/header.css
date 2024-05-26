@@ -1,8 +1,9 @@
 header {
     background-color: #C3ACD0;
+    background-image: url("/assets/images/headerbg.jpeg");
+    background-size: cover;
     color: #fff;
     padding: 10px;
-    z-index: 999;
     text-align: center;
 }
 
@@ -22,5 +23,6 @@ header a {
 }
 
 .header-title {
-    color: black;
+    color: white;
+    text-shadow: #fff 1px 1px 2px;
 }
