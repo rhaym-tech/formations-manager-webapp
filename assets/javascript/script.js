@@ -9,16 +9,24 @@ document.addEventListener('DOMContentLoaded', () => {
  * Cette fonction modifie la date des commentaires pour les afficher dans un format plus lisible.
  */
 function modifierCommentairesDates() {
+    // Sélectionne tous les éléments contenant le texte "commentaire" et les renvoie dans un tableau.
     let commentaires = document.querySelectorAll('div.comment-timestamp');
 
+    // Pour chaque élément de commentaires, récupère la date de l'événement.
     commentaires.forEach((element) => {
+        // Récupère la date de le commentaire.
         let dateString = element.textContent;
 
+        // Crée une date à partir de la date de le commentaire.
         const date = new Date(dateString);
 
+        // Définit les options de formatage de la date.
         let options = { weekday: 'long', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' };
+    
+        // Formate la date en utilisant les options définis.
         let dateFormatee = date.toLocaleDateString('fr-FR', options);
 
+        // Modifie la date de le commentaire en utilisant le formatage de la date.
         element.textContent = "Envoyé le " + dateFormatee;
     })   
 }
