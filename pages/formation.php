@@ -12,7 +12,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <!-- Inclusion du head avec un titre -->
-<?php $title = "Ecole de formation"; include '../includes/head.php'; ?>
+<?php $title = "Ecole TechPro"; include '../includes/head.php'; ?>
 <body>
     <!-- Inclusion du header -->
     <?php include '../includes/header.php'; ?>

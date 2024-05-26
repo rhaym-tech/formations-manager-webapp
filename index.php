@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Inclusion du head avec un titre -->
-<?php $title = "Ecole.uwu"; include 'includes/head.php'; ?>
+<?php $title = "Ecole TechPro"; include 'includes/head.php'; ?>
 
 <body>
     <!-- Inclusion du header -->
